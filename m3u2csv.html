@@ -1,2 +1,22 @@
-<input id="m3u">
-<input id="csv"><div>can i copy this text?</div>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<!--input id="m3ui" style="width:100%; height: 50px"-->
+<textarea name="m3u" style="width: 100%;height: 200px;padding:20px;"></textarea>
+<button id="process">Process</button>
+<div id="example">
+#EXTM3U
+ #EXTINF:161,Murderers - John Frusciante
+ /Users/Administrator/Music/iTunes/iTunes Media/Music/John Frusciante/To Record Only Water For Ten Days/07 Murderers.m4a
+ #EXTINF:255,Clutter - Ronald Jenkees
+ /Users/Administrator/Music/iTunes/iTunes Media/Music/Ronald Jenkees/Ronald Jenkees/04 Clutter.mp3
+ #EXTINF:258,We Get High - Logic
+ /Users/Administrator/Music/iTunes/iTunes Media/Music/Compilations/Young Sinatra_ Undeniable/12 We Get High.mp3
+</div>
+<div id="csv"></div>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="m3u2csv.js"></script>
+</body>
+</html>
