@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>nuage</title>
+</head>
+<body>
+        <div id="tableauViz" style="height:600px;width:800px;">
+
+        </div>
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://online.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+        <script>
+
+            function initializeViz() {
+                var placeholderDiv = document.getElementById("tableauViz");
+                var url = "https://online.tableausoftware.com/t/stratus/views/Variety/AvgbySubject?:embed=y&:display_count=no";
+                var options = {
+                    width: placeholderDiv.offsetWidth,
+                    height: placeholderDiv.offsetHeight,
+                    hideTabs: true,
+                    hideToolbar: true,
+                    onFirstInteractive: function () {
+                        workbook = viz.getWorkbook();
+                        activeSheet = workbook.getActiveSheet();
+                    }
+                };
+                viz = new tableauSoftware.Viz(placeholderDiv, url, options);
+            }
+            $(document).ready(function () {
+                initializeViz();
+            });
+
+        </script> 
+</body>
+</html>
