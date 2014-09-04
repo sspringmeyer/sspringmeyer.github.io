@@ -2,11 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>nuage</title>
+    <link rel="stylesheet" type="text/css" href="nuage.css" />
 </head>
 <body>
-        <div id="tableauViz" style="height:600px;width:800px;">
-
+    <div>
+        <div class="gnheader">gatesnotes data</div>
+        <div>
+            <div class="tableauViews">
+                <ul>
+                    <li>Channel Health</li>
+                    <li>Key Perceptions</li>
+                    <li>Campaign Management</li>
+                    <li>Content Testing</li>
+                    <li>Home Page Performance</li>
+                    <li>Related Content Groups</li>
+                    <li>Articles</li>
+                </ul>
+            </div>
+            <div id="tableauViz" class="tableauViz" style="height:600px;width:800px;"></div>
         </div>
+    </div>
+
         <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="https://online.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
         <script>
