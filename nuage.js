@@ -15,6 +15,8 @@ function initializeViz() {
     viz = new tableauSoftware.Viz(placeholderDiv, url, options);
 }
 /*
+
+https://online.tableausoftware.com/t/stratus/views/BGC3Channels/Dashboard3?:embed=y&:display_count=no
 function signinViz() {
     var signinStr = '<tsRequest><credentials name="steve.springmeyer@bgc3.com" password="Tableau999!"><site contentUrl="https://online.tableausoftware.com/t/stratus"/></credentials></tsRequest>';
     alert("signin");
