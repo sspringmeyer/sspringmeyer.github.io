@@ -1,7 +1,7 @@
 var tableauXHeader = "";
 function initializeViz() {
     var placeholderDiv = document.getElementById("tableauViz");
-    var url = "https://online.tableausoftware.com/t/stratus/views/BGC3Channels/Dashboard3?:embed=y&:display_count=no";
+    var url = "https://online.tableausoftware.com/t/stratus/views/BGC3Channels/CampaignsDB2?:embed=y&:display_count=no";
     var options = {
         width: placeholderDiv.offsetWidth,
         height: placeholderDiv.offsetHeight,
@@ -16,7 +16,7 @@ function initializeViz() {
 }
 /*
 
-https://online.tableausoftware.com/t/stratus/views/BGC3Channels/Dashboard3?:embed=y&:display_count=no
+https://online.tableausoftware.com/t/stratus/views/BGC3Channels/CampaignsDB?:embed=y&:display_count=no
 function signinViz() {
     var signinStr = '<tsRequest><credentials name="steve.springmeyer@bgc3.com" password="Tableau999!"><site contentUrl="https://online.tableausoftware.com/t/stratus"/></credentials></tsRequest>';
     alert("signin");
@@ -39,8 +39,19 @@ function signinViz() {
 
 }
 */
+function adjustWidth() {
+    var ww = $(window).width();
+    $(".tableauFixed").css("width", ( ww + 240) + "px");
+    $(".tableauVizCont").css("width", ww + "px");
+    $(".tableauViz").css("width", (ww - 120) + "px");
+    $(".tableauViz").css("height", ($(window).height() - 60) + "px");
+
+}
+
+
 $(document).ready(function () {
     //signinViz();
+    adjustWidth();
     initializeViz();
     $('.tableauViz').click(function () {
     });
@@ -56,5 +67,9 @@ $(document).ready(function () {
             }, 100);
 
         }
+    });
+    $(window).resize(function () {
+        adjustWidth();
+        initializeViz();
     });
 });

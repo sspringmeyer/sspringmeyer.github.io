@@ -41,26 +41,32 @@
         width: auto;
         background-color: white;
     }
-    .gnheader .hamburger {
+    .gnheader .hamburgerHolder {
+        position: relative;
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+    }
+    .gnheader .hamburgerHolder i {
         position: absolute;
         top: 4px;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-    }
+     }
     .gnheader .hamburger :hover {
         color: #666666;
         background-color: black;
     }
 .tableauViz {
-    margin-top: 30px;
-    width: 800px;
-    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
 }
 
 .tableauVizCont {
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
 }
 .sans {
 	font-family:'DINWebPro', sans-serif;
