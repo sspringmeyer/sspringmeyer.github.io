@@ -8,29 +8,32 @@
 <head profile="http://www.w3.org/2005/10/profile">
     <title>nuage</title>
     <link rel="icon" type="image/ico" href="http://sspringmeyer.github.io/stevebike.ico" />
-   <link rel="stylesheet" type="text/css" href="nuage.css" />
- 
+    <link rel="stylesheet" href="fontello/css/tgn.css" />
+    <link rel="stylesheet" href="fontello/css/animation.css" />
+    <link rel="stylesheet" href="http://gatesnotes.com/TGN/css/DIN.css" />
+    <link rel="stylesheet" type="text/css" href="nuage.css" />
+
 </head>
 <body>
-    <div class="mainCont">
-        <div style="display:block;">
-            <div class="gnheaderCont">
-                <div class="gnheader">gatesnotes data</div>
-            </div>
+    <div class="tableauFixed">
+        <div class="menuSlider sans">
+            <div class="menuTop"></div>
+            <ul>
+                <li>Channel Health</li>
+                <li>Key Perceptions</li>
+                <li class="selected">Campaign Management</li>
+                <li>Content Testing</li>
+                <li>Home Page Performance</li>
+                <li>Related Content Groups</li>
+                <li>Articles</li>
+            </ul>
+        </div>
+
+        <div class="tableauCont">
+            <div class="gnheader"><span><i class="icon-list"></i></span><object type="image/svg+xml" data="tgn-analytics.svg">Your browser does support svg</object></div>
             <div>
-                <div class="tableauViews">
-                    <ul>
-                        <li>Channel Health</li>
-                        <li>Key Perceptions</li>
-                        <li class="selected">Campaign Management</li>
-                        <li>Content Testing</li>
-                        <li>Home Page Performance</li>
-                        <li>Related Content Groups</li>
-                        <li>Articles</li>
-                    </ul>
-                </div>
                 <div class="tableauVizCont">
-                    <div id="tableauViz" class="tableauViz" style="height:600px;width:800px;"></div>
+                    <div id="tableauViz" class="tableauViz"></div>
                 </div>
             </div>
         </div>

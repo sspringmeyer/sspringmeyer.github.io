@@ -1,56 +1,87 @@
 ﻿body {
-    background: white;
+    background: black;
 }
-.mainCont {
+.tableauFixed {
+    position: fixed;
+    left: -240px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.tableauCont {
+    position: absolute;
+    left: 240px;
+    top: 0;
+    height: 100%;
     border: 1px solid black;
     height: 100%;
     width: 100%;
 }
 .gnheaderCont {
     width: 100%;
-    height: 60px;
+    height: 40px;
+    background-color: white;
 
 }
 .gnheader {
-    background: black;
-    color: white;
-    font-size: 40px;
-    height: 60px;
+    background: white;
+    color: black;
+
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
     /* width: 300px; */
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 40px;
-    display: inline-block;
 }
+    .gnheader object {
+        height: 40px;
+        width: auto;
+        background-color: white;
+    }
 .tableauViz {
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 800px;
+    height: 600px;
 }
 
 .tableauVizCont {
-    border: 1px solid black;
-    border-radius: 50px;
-    width: 900px;
-    height: 700px;
-    float: left;
-    margin: 40px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
 }
-.tableauViews {
-    float: left;
-    width: 250px;
+.sans {
+	font-family:'DINWebPro', sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
-    .tableauViews ul {
+.menuSlider {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100%;
+    background: #666666;
+}
+.menuTop {
+    height: 40px;
+    background-color: black;
+    width: 100%;
+}
+    .menuSlider ul {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
-    .tableauViews ul li {
+    .menuSlider ul li {
         border: 1px solid black;
-        height: 75px;
-        width: 200px;
-        font-size: 25px;
+        height: 40px;
+        width: auto;
+        font-size: 17px;
+        line-height: 40px;
         color: black;
-        padding: 10px;
+        padding-left: 25px;
     }
-        .selected {
-            background-color: #cc6633;
-        }
+.selected {
+    background-color: #eeeeee;
+}

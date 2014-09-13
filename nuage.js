@@ -42,4 +42,9 @@ function signinViz() {
 $(document).ready(function () {
     //signinViz();
     initializeViz();
+    $('.tableauViz').click(function () {
+    });
+    $('.hamburger').click(function () {
+
+    });
 });
