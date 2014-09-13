@@ -36,9 +36,21 @@
     padding-right: 10px;
 }
     .gnheader object {
+        margin-left: 40px;
         height: 40px;
         width: auto;
         background-color: white;
+    }
+    .gnheader .hamburger {
+        position: absolute;
+        top: 4px;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+    .gnheader .hamburger :hover {
+        color: #666666;
+        background-color: black;
     }
 .tableauViz {
     margin-top: 30px;

@@ -45,6 +45,16 @@ $(document).ready(function () {
     $('.tableauViz').click(function () {
     });
     $('.hamburger').click(function () {
+        if ($(".tableauFixed").css("left") != "0px") {
+            $(".tableauFixed").animate({
+                left: "0px"
+            }, 100);
 
+        } else {
+            $(".tableauFixed").animate({
+                left: "-240px"
+            }, 100);
+
+        }
     });
 });
