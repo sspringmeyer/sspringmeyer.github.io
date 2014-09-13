@@ -54,8 +54,8 @@ $(document).ready(function () {
     adjustWidth();
     for (i = 1; i < 8; i++)
         initializeViz(i);
-    $('.tableauViz').hide();
-    $('#tableauViz1').show();
+    $('.tableauVizHolder').hide();
+    $('#tableauVizHolder1').show();
     $('.tableauViz').click(function () {
     });
     $('.hamburger').click(function () {
@@ -70,6 +70,12 @@ $(document).ready(function () {
             }, 100);
 
         }
+    });
+    $('ul.tableauVizSelect > li').click(function () {
+        var num = $(this).attr('data-item');
+        $('.tableauVizHolder').hide();
+        $('#tableauVizHolder'+num).show();
+
     });
     $(window).resize(function () {
         adjustWidth();
