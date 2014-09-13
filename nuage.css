@@ -24,6 +24,7 @@
 
 }
 .gnheader {
+    position: relative;
     background: white;
     color: black;
 
@@ -36,20 +37,19 @@
     padding-right: 10px;
 }
     .gnheader object {
-        margin-left: 40px;
+        margin-left: 25px;
         height: 40px;
         width: auto;
         background-color: white;
     }
     .gnheader .hamburgerHolder {
-        position: relative;
+        position: absolute;
+        top: 0px;
         cursor: pointer;
         height: 60px;
         width: 60px;
     }
-    .gnheader .hamburgerHolder i {
-        position: absolute;
-        top: 4px;
+    .gnheader .hamburger {
      }
     .gnheader .hamburger :hover {
         color: #666666;

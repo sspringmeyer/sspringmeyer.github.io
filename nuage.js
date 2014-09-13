@@ -1,6 +1,6 @@
 var tableauXHeader = "";
-function initializeViz() {
-    var placeholderDiv = document.getElementById("tableauViz");
+function initializeViz(i) {
+    var placeholderDiv = document.getElementById("tableauViz"+i);
     var url = "https://online.tableausoftware.com/t/stratus/views/BGC3Channels/CampaignsDB2?:embed=y&:display_count=no";
     var options = {
         width: placeholderDiv.offsetWidth,
@@ -44,7 +44,7 @@ function adjustWidth() {
     $(".tableauFixed").css("width", ( ww + 240) + "px");
     $(".tableauVizCont").css("width", ww + "px");
     $(".tableauViz").css("width", (ww - 120) + "px");
-    $(".tableauViz").css("height", ($(window).height() - 60) + "px");
+    $(".tableauViz").css("height", ($(window).height() - 120) + "px");
 
 }
 
@@ -52,7 +52,10 @@ function adjustWidth() {
 $(document).ready(function () {
     //signinViz();
     adjustWidth();
-    initializeViz();
+    for (i = 1; i < 8; i++)
+        initializeViz(i);
+    $('.tableauViz').hide();
+    $('#tableauViz1').show();
     $('.tableauViz').click(function () {
     });
     $('.hamburger').click(function () {
@@ -70,6 +73,6 @@ $(document).ready(function () {
     });
     $(window).resize(function () {
         adjustWidth();
-        initializeViz();
+        //initializeViz();
     });
 });
