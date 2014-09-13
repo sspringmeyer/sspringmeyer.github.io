@@ -74,7 +74,9 @@ $(document).ready(function () {
     $('ul.tableauVizSelect > li').click(function () {
         var num = $(this).attr('data-item');
         $('.tableauVizHolder').hide();
-        $('#tableauVizHolder'+num).show();
+        $('#tableauVizHolder' + num).show();
+        $('ul.tableauVisSelect li').removeClass("selected");
+        $(this).addClass("selected");
 
     });
     $(window).resize(function () {
