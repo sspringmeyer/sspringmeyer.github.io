@@ -8,9 +8,6 @@
     height: 100%;
     width: 100%;
 }
-ul.tableauVizSelect li :hover {
-    background-color: white;
-}
 .tableauCont {
     position: absolute;
     left: 240px;
@@ -107,8 +104,11 @@ ul.tableauVizSelect li :hover {
         color: black;
         padding-left: 25px;
     }
-.selected {
+.menuSelected {
     background-color: #eeeeee;
+}
+.menuHover {
+    background-color: #666666;
 }
 .tableauVizHolder h2 {
     color: white;
