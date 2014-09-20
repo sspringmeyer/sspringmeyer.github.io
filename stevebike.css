@@ -1,0 +1,99 @@
+﻿.previous {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    margin-left: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+    .previous :hover {
+        color: red;
+    }
+.next {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    margin-right: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    }
+    .next :hover {
+        color: red;
+    }
+.imageHolder {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.show {
+    display: block;
+}
+.imgCaption {
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    font-size: 20px;
+}
+.posUR {
+    right: 0;
+    top: 0;
+}
+.posLR {
+    right: 0;
+    bottom: 0;
+}
+.posUL {
+    left: 0;
+    top: 0;
+}
+.posLL {
+    left: 0;
+    bottom: 0;
+}
+    
+
+.stretchBackground {
+    position: relative; 
+    background-repeat:no-repeat;
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+    background-repeat: no-repeat; 
+    overflow-x: hidden;
+    -webkit-background-size: cover;
+}
+.portrait {
+    position: relative; 
+    background-repeat:no-repeat;
+    height: 100%; 
+    width: auto;
+    background-position: 50% 50%; 
+    background-repeat: no-repeat; 
+    background-color: black;
+    overflow-x: hidden;
+ 
+}
+.imgternbikejpg {
+    background-image: url('img/ternbike.jpg');
+}
+.imgmilk3jpg {
+   background-image: url('img/milk3.jpg');
+}
+.imgcassava3jpg {
+   background-image: url('img/cassava3.jpg');
+}
+
+
+@media all and (max-width: 800px) {
+}
