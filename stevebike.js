@@ -67,7 +67,7 @@ $("#artGallery div.artGalleryFrame").eq(tos).animate({ 'left': '0px' }, animTime
 
  */
 function showImg(imgTo) {
-    if ((imgTo >= totalImages - 1) || (imgTo < 0)) {
+    if ((imgTo >= totalImages) || (imgTo < 0)) {
         return;
     }
     var left2right = (imgOn < imgTo);
@@ -83,6 +83,10 @@ function showImg(imgTo) {
 
     } else {
         $("li.imageHolder").eq(imgOn).animate({ 'left': $(window).width() + 'px' }, animTime);
+        $("li.imageHolder").eq(imgTo).css('width', $(window).width() + 'px');
+        $("li.imageHolder").eq(imgTo).css('left', -1 * $(window).width() + 'px');
+        $("li.imageHolder").eq(imgTo).css('display', 'block');
+        $("li.imageHolder").eq(imgTo).animate({ 'left': '0px' }, animTime + 100);
     }
     imgOn = imgTo;
     showArrows();
