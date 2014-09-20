@@ -71,22 +71,23 @@ function showImg(imgTo) {
         return;
     }
     var left2right = (imgOn < imgTo);
-    var animTime = 200;
-    $("li.imageHolder").eq(imgOn).animate({ 'opacity': '0' }, 100);
-    $("li.imageHolder").eq(imgTo).animate({ 'opacity': '1' }, 400);
+    var animTime = 1000;
+    //$("li.imageHolder").eq(imgOn).animate({ 'opacity': '0' }, 100);
+    //$("li.imageHolder").eq(imgTo).animate({ 'opacity': '1' }, 400);
+    ww = $(window).width();
     if (left2right) {
-        $("li.imageHolder").eq(imgOn).animate({ 'left': -1 * $(window).width() + 'px' }, animTime);
-        $("li.imageHolder").eq(imgTo).css('left', $(window).width() + 'px');
-        $("li.imageHolder").eq(imgTo).css('width', $(window).width() + 'px');
+        $("li.imageHolder").eq(imgOn).animate({ 'left': -1 * ww + 'px' }, animTime);
+        $("li.imageHolder").eq(imgTo).css('left', ww + 'px');
+        $("li.imageHolder").eq(imgTo).css('width', ww + 'px');
         $("li.imageHolder").eq(imgTo).css('display', 'block');
-        $("li.imageHolder").eq(imgTo).animate({ 'left': '0px' }, animTime + 100);
+        $("li.imageHolder").eq(imgTo).animate({ 'left': '0px' }, animTime);
 
     } else {
-        $("li.imageHolder").eq(imgOn).animate({ 'left': $(window).width() + 'px' }, animTime);
-        $("li.imageHolder").eq(imgTo).css('width', $(window).width() + 'px');
-        $("li.imageHolder").eq(imgTo).css('left', -1 * $(window).width() + 'px');
+        $("li.imageHolder").eq(imgOn).animate({ 'left': ww + 'px' }, animTime);
+        $("li.imageHolder").eq(imgTo).css('width', ww + 'px');
+        $("li.imageHolder").eq(imgTo).css('left', -1 * ww + 'px');
         $("li.imageHolder").eq(imgTo).css('display', 'block');
-        $("li.imageHolder").eq(imgTo).animate({ 'left': '0px' }, animTime + 100);
+        $("li.imageHolder").eq(imgTo).animate({ 'left': '0px' }, animTime);
     }
     imgOn = imgTo;
     showArrows();

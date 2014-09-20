@@ -1,4 +1,7 @@
-﻿.previous {
+﻿body {
+    overflow-x: hidden;
+}
+.previous {
     position: fixed;
     left: 0;
     top: 50%;
@@ -24,6 +27,10 @@
     .next :hover {
         color: red;
     }
+.imageGallery {
+    overflow-x: hidden;
+}
+
 .imageHolder {
     display: none;
     position: absolute;
@@ -31,6 +38,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 .show {
     display: block;
@@ -43,6 +51,7 @@
     margin: 20px;
     color: black;
     font-size: 20px;
+    overflow-x: hidden;
 }
 .posUR {
     right: 0;
