@@ -1,7 +1,8 @@
 var tableauXHeader = "";
 function initializeViz(i) {
     var placeholderDiv = document.getElementById("tableauViz"+i);
-    var url = "https://online.tableausoftware.com/t/stratus/views/BGC3Channels/CampaignsDB2?:embed=y&:display_count=no";
+    //var url = "https://online.tableausoftware.com/t/stratus/views/BGC3Channels/CampaignsDB2?:embed=y&:display_count=no";
+    var url = "http://tableaux.cloudapp.net/views/BGC3Channels/CampaignsDB?:embed=y&:display_count=no";
     var options = {
         width: placeholderDiv.offsetWidth,
         height: placeholderDiv.offsetHeight,

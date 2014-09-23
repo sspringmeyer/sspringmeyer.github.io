@@ -121,7 +121,9 @@ p {
 .imgcassava3jpg {
    background-image: url('img/cassava3.jpg');
 }
-
+.imgonedrivejpg {
+    background-image: url('https://onedrive.live.com/redir?resid=7508E7585298F830!42056&authkey=!AMwwFT_0LPvYj3g&v=3&ithint=photo%2cJPG');
+}
 
 @media all and (max-width: 800px) {
 }
